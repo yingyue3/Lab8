@@ -60,16 +60,9 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public boolean hasCity(City city) {
-        for (City cityInTheList: cities) {
-            if (cityInTheList.getCityName() == city.getCityName() && cityInTheList.getProvinceName() == city.getProvinceName()) {
-                return Boolean.TRUE;
-            }
-        }
         return Boolean.FALSE;
     }
 
-    public void deleteCity(City city) {
-        cities.remove(city);
-    }
+    public void deleteCity(City city) {}
 
 }
